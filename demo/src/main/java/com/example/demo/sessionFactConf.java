@@ -21,7 +21,7 @@ public class sessionFactConf {
 	    factory.setDataSource(ds);
 
 	    factory.setMapperLocations(
-	        new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/cubrid/mapper/*.xml") // A
+	        new PathMatchingResourcePatternResolver().getResources("classpath:mybatis/postgres/mapper/*.xml") // A
 	    );
 	    return factory.getObject();
 
